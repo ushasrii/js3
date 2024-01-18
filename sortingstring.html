@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting</title>
+</head>
+<body>
+    <script>
+       var arr = [
+        { FirstName: 'Usha', LastName: 'Sree', city: 'Amalapuram'},
+        { FirstName: 'Kamala', LastName: 'kumari', city: 'chitoor'},
+        { FirstName: 'Durga', LastName: 'Sri', city: 'Mori'}
+    ];
+    function compare( a, b ) 
+    {
+        if ( a.FirstName < b.FirstName ){
+            return -1;
+        }
+        if ( a.FirstName > b.FirstName ){
+            return 1;
+        }
+        return 0;
+    }
+    console.log("Sorting By First Name Ascending:");
+    console.log(arr.sort(compare));
+    </script>
+</body>
+</html>
