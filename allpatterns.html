@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = new String()
+        x = prompt("Enter String")
+        var len = x.length
+        //For increasing and decreasing
+        document.write("Increased")
+        for(i=0;i<len;i++)
+        {
+            document.write("<br>")
+            for(j=0;j<=i;j++)
+            document.write(x.charAt(j))
+        }
+        document.write("<br><br><br> Decreased")
+        for(i=len-1;i>=0;i--)
+        {
+            document.write("<br>")
+            for(j=0;j<=i;j++)
+            document.write(x.charAt(j))
+        }
+        document.write("<br><br><br>Diamond")
+        for (i = 0; i < len; i++) {
+            document.write("<br>");
+            for (j = len - 1; j >= 0; j--) {
+                document.write(j > i ? "&nbsp;" : x.charAt(j));
+            }
+            for (k = 1; k <= i; k++) {
+                document.write(x.charAt(k));
+             }
+        }
+        document.write("<br><br><br>Reverse Diamond")
+        for (i = 0; i < len; i++) {
+            document.write("<br>");
+            for ( j = 0; j < i; j++) {
+                document.write("&nbsp;");
+            }
+            for ( k = i; k < len; k++) {
+                document.write(x.charAt(k));
+            }
+        }
+       
+    </script>
+</body>
+</html>
